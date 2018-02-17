@@ -62,6 +62,6 @@ func TestExtractNSS_weekly(t *testing.T) {
 		t.Fatal(err)
 	}
 	if len(certs) != expectedCertCount {
-		t.Error("got %d certs, expected %d", len(certs), expectedCertCount)
+		t.Errorf("got %d certs, expected %d", len(certs), expectedCertCount)
 	}
 }
